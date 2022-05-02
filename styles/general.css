@@ -1,0 +1,65 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.containerBody{
+   display: grid;
+   grid-template:
+    "header" 0.3fr
+    "main" 5fr
+    "footer" 0.5fr ;
+  background-color: #161e1f;
+}
+
+header {
+  grid-area: header;
+}
+
+li {
+  list-style: none;
+}
+
+.nav__links {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+main {
+  color: white;
+  background-color: #161e1f;
+  grid-area: main;
+}
+
+footer{
+  grid-area: footer;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+p,
+h2,
+h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+

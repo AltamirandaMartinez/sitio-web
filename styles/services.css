@@ -1,0 +1,228 @@
+.containerBody {
+
+  grid-template:
+      "header" 0.3fr
+      "main" 5.8fr
+      "footer" 0fr;
+}
+
+main, .containerBody{
+  background-color: #fafafa;
+}
+
+.containerServices{
+display: flex;
+justify-content:space-around;
+flex-direction: column;
+align-items: center;
+margin: 1rem;
+margin-bottom: 2rem
+}
+
+.containerServices__title{
+  color: #495057;
+  padding: 1rem;
+  font-size: 1.7rem;
+  margin-top: 2rem;
+  text-transform: uppercase;
+}
+
+.services {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   
+  }
+
+  .card__img {
+    margin: 0 auto;
+    height: 20rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.2rem 0.2rem 0 0;
+  }
+  
+  .card__title {
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ba954e;
+  }
+  
+  .card__description {
+    padding: 0.5rem;
+    color: black;
+    font-size: 1.3rem;
+    height: 23rem;
+  }
+  
+  .card__btn, .containerServices__btnPrice {
+    width: 100%;
+    font-size: 1.25rem;
+    border: none;
+    opacity: 0.8;
+    background-color: #014F86;
+    padding: 0.8rem;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    
+  }
+
+  .containerServices__btnPrice{
+    border-radius: 1rem;
+  }
+
+  .card__btn:hover, .containerServices__btnPrice:hover{
+    opacity: 1;
+    z-index: 1;
+
+  }
+
+  .containerServices__btnPrice .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color:  #ba954e;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 108%;
+    left: 50%;
+    margin-left: -60px;
+  }
+  
+  .containerServices__btnPrice  .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #ba954e transparent;
+  }
+  
+  .containerServices__btnPrice:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .card__btnRedes{
+    width: 100%;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    background-color: #014F86;
+    padding: 0.8rem;
+    transition: all 0.3s ease-in-out;
+    opacity: 0.6;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    align-self: flex-end;
+  }
+
+.card__btnRedes:hover {
+    padding-right: 12px;
+    opacity: 1;
+
+  }
+  
+  .card__btnRedes:hover .btnServices {
+    visibility: visible;
+    position: absolute;
+    right: 25px;
+    opacity: 1;
+  }
+  
+  .btnServices{
+    visibility: hidden;
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+
+  .card__links{
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @media (min-width: 576px) { 
+    .containerBody {
+
+      grid-template:
+          "header" 0.3fr
+          "main" 6fr
+          "footer" 0fr;
+    }
+    .card__description {
+      height: 14rem;
+    }
+    
+  }
+@media (min-width: 768px) { 
+
+  .containerBody {
+
+    grid-template:
+        "header" 0.3fr
+        "main" 7fr
+        "footer" 0fr;
+  }
+  .containerServices{
+    justify-content:space-around;
+    flex-direction: row;
+   
+    }
+    .services {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+     
+    }
+
+    .containerServices__btnPrice{
+      width: 31%;
+      align-self: flex-end;
+    }
+    .card__description {
+   
+      height: 19rem;
+    }
+  
+  }
+ 
+
+  @media (min-width: 1118px) { 
+    .services {
+  
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+   
+  }
+
+ 
+  }
+
+  @media (min-width: 1320px) { 
+    .card__description {
+   
+      height: 14rem;
+    }
+  }

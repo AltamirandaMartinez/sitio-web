@@ -1,0 +1,143 @@
+.mainAbout{
+    background-color: #fafafa;
+}
+.containerAbout{
+    display: grid;
+    grid-template-rows:  1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 4rem;
+}
+
+.title__aboutUs{
+    color: #495057;
+    padding: 1rem;
+    
+}
+
+
+.about_Luis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    margin: 1rem;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    border-radius: 0.8rem
+}
+.about_Luis h3 {
+    color: #A48339;;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about_Luis h2{
+    color: #A48339;;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container_textoAbout{
+    width: 80%;
+    color: black;
+    text-align: justify;
+    margin: 1rem;
+}
+
+.container_textoAbout p{
+    line-height: 2;
+}
+
+.Luis_foto{
+    width: 250px;
+    border-radius: 0.8rem
+}
+
+.Luis_foto:hover{
+-webkit-filter: grayscale(100%);
+filter: grayscale(100%);
+}
+
+.formacion{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.formacion li{
+    list-style: disc;
+}
+
+.about_Maru{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    border-radius: 0.8rem
+}
+
+.about_Maru h3 {
+    color: #A48339;;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.about_Maru h2{
+    color: #A48339;;
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.Maru_foto{
+    width: 250px;
+    border-radius: 0.8rem
+}
+
+.Maru_foto:hover{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    }
+
+@media (min-width: 992px) { 
+    .about_Luis{
+        flex-direction: row;
+        margin: 5%;
+        align-items: center;
+        width: 80%;
+    }
+    .Luis_foto {
+        width: 400px;
+    }
+    .container_textoAbout {
+        margin-left:inherit;
+        text-align: justify;
+    }
+
+    .container_textoAbout h3{
+        font-size: 2rem;
+    }
+
+    .container_textoAbout h2{
+        font-size: 1.8rem;
+    }
+
+    .container_textoAbout p{
+        font-size: 1.3rem;
+    }
+
+    .about_Maru{
+        flex-direction: row;
+        margin: 5%;
+        align-items: center;
+        width: 80%;
+    }
+    .Maru_foto {
+        width: 400px;
+
+    }
+    .formacion{
+        align-items: flex-start;
+    }
+
+}

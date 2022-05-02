@@ -1,0 +1,338 @@
+/* ESTILOS CARROUSEL */
+
+.carousel-item .carousel-caption {
+  height: 100%;
+}
+
+.carousel-inner {
+    height: 10rem;
+}
+
+/* .carousel-inner .carousel-item{
+  transition: transform 2s ease-in-out;
+} */
+
+
+
+
+.btnCarousel{ 
+  /* background-color: black; */
+  background-color: #014F86;
+  border-radius: 10px;
+  padding: 0.2rem 2rem;
+  font-size: 1rem;
+  opacity: 70%;
+  color: white;
+  border: none;
+
+}
+
+.btnCarousel:hover{
+  background-color: #A48339;
+
+}
+
+.btnCarousel a{
+  text-decoration: none;
+  color:white;
+  font-weight: bold;
+}
+
+.containerImg_img{
+  width: 100%;
+}
+
+.contenido{
+  display: none;
+
+}
+
+.containerBanner{
+  background-color: black;
+  opacity: 60%;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.containerBanner p{
+  color: #fff;
+}
+
+.containerDescription{
+  padding-bottom: 13rem;
+  display: none;
+}
+
+.containerDescription__p{
+  color: #6C757D;
+}
+
+.textoBanner{
+  background-color: black;
+  opacity: 60%;
+  border-radius: 22px;
+  width: 50%;
+}
+
+
+  .carousel-caption h5{
+    font-size: 2rem;
+    margin-top: 0.5rem;
+    color: #495057;
+    font-weight: bold;
+   }
+
+   .contenido__p{
+    font-size: 1rem;
+    color: #6C757D;
+
+  }
+
+
+  .textoContenido h1{
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .containerValores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+
+  .containerMision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5%;
+  }
+
+  .containerMision__title{
+    font-size: 2.5rem;
+    font-family:"Montserrat", sans-serif;
+    color: #ba954e;
+
+  }
+
+  .containerTitle{
+      display: flex;
+      color: #ba954e;
+    font-size: 3rem;
+
+  }
+ 
+  .containerImg__img{
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .containerList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 10px white ;
+}
+
+
+  .containerVision{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin: 5%;
+}
+
+.containerVision__title{
+  color: #ba954e;
+  font-size: 2.5rem;
+ font-family:  "Montserrat", sans-serif;
+}
+
+
+
+  /* MEDIASQUERYS */
+  @media (min-width: 523px) { 
+    .carousel-inner {
+      height: 12rem;
+  }
+  }
+
+  @media (min-width: 768px) { 
+    .carousel-inner {
+      height: 29rem;
+    }
+    
+    .carousel-caption{
+        width: 100%;
+        padding-bottom: 1rem;
+      
+    }
+    .carousel-caption h5{
+      font-size: 2rem;
+    
+    }
+
+    .carousel-caption p{
+      font-size: 1.3rem;
+    
+    }
+
+    .btnCarousel{ 
+      padding:1.2rem 2rem;
+    }
+   
+    .containerDescription{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: center;
+    }
+  
+    .containerBanner{
+      width: 80%;
+    }
+  
+    .contenido{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 5rem;
+      padding-bottom: 13rem;
+    }
+  
+    .carousel-inner .carousel-item {
+      height: 575px;
+    }
+
+
+    .carousel-container{
+      right:0;
+      left:0;
+      top: 0.2rem;
+    }
+  
+    .containerValores{
+      display:grid;
+        align-items: center;
+        justify-items: center;
+        margin-top: 5%;
+    }
+  
+    .containerTitle{
+      justify-content: space-evenly;
+      margin-top: 3%;
+     
+    }
+  
+    .containerList{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      flex-direction: row-reverse;
+    }
+  
+    .containerList li {
+      list-style:disc;
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+    }
+  
+    .containerMision{
+      display: grid;
+      grid-template-columns: 50% 60%;
+      justify-items: center;
+      margin-top: 5%;
+    }
+  
+    .containerMision__description{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 70%;
+    }
+  
+ 
+  
+    .containerMision__p{
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      color: #fff;
+    }
+  
+    .containerVision{
+      display: grid;
+      grid-template-columns: 50% 60%;
+      justify-items: center;
+      margin-top: 5%;
+    }
+  
+    .containerMision, .containerVision
+    {
+      color: #fff;
+      padding: 1rem;
+  
+    }
+  
+    .containerVision__description{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 92%;
+    }
+  
+    
+    .containerVision__p{
+      font-size: 1.6rem;
+      font-family: "Roboto", sans-serif;
+      text-align: justify;
+    }
+  
+    .containerImg{
+      display: flex;
+      align-items: center;
+    }
+  
+    .containerImg__img{
+      width: 450px;
+    }
+  
+    .textoContenido p{
+      font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
+    }
+  
+  
+    .carousel-inner .carousel-item {
+      height: 34.37rem;
+    }
+    
+  
+  }
+
+
+  @media (min-width: 992px) { 
+    .containerBanner {
+      width: 61%;
+      line-height: 1.5;
+  }
+
+  .carousel-inner .carousel-item {
+    height: 45rem;
+  }
+
+  }
+
+
+  @media (min-width: 1346px) { 
+    .carousel-inner {
+      height: 34rem;
+    }
+
+    .containerBanner {
+      line-height: 2;
+  }
+    
+    
+  }
+
+ 
