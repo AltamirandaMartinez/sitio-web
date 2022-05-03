@@ -9,6 +9,11 @@ const dropdown = document.getElementById("dropdown");
 const containeDropdown = document.getElementById("containeDropdown");
 
 /**
+ * Declaración de variables
+ */
+let showMenuResponsive = true;
+
+/**
  * Si el ancho de la página es menor a 760px, ocultará el menú al recargar la página
  */
 
@@ -19,15 +24,20 @@ if (window.innerWidth > 865) {
 /**
  * Haciendo el menú responsive(adaptable)
  */
-window.addEventListener("resize", function () {
+window.addEventListener("resize", function (evento) {
   if (window.innerWidth >= 865) {
     listNav.classList.remove("active");
     listNav.classList.add("nav");
   }
 
   if (window.innerWidth < 865) {
-    listNav.classList.add("active");
-    listNav.classList.remove("nav");
+    if (showMenuResponsive === false) {
+      listNav.classList.add("active");
+      listNav.classList.remove("nav");
+    } else {
+      listNav.classList.remove("active");
+      listNav.classList.add("nav");
+    }
   }
 });
 
@@ -35,17 +45,17 @@ window.addEventListener("resize", function () {
  * Muestra el menú al hacer click en vista mobile
  */
 const hideMenu = (e) => {
-  console.log("Funciona");
-  listNav.classList.toggle("nav");
-  listNav.classList.toggle("active");
-  changeIcon();
-};
+  showMenuResponsive = !showMenuResponsive;
 
-const changeIcon = () => {
-  if (listNav.classList.contains("active")) {
+  if (showMenuResponsive === false) {
+    listNav.classList.remove("nav");
+    listNav.classList.add("active");
+
     responsive.innerHTML =
       ' <span class="iconify" data-icon="ep:close-bold"></span>';
   } else {
+    listNav.classList.add("nav");
+    listNav.classList.remove("active");
     responsive.innerHTML =
       ' <span class="iconify" data-icon="dashicons:menu"></span>';
   }
@@ -56,8 +66,6 @@ const changeIcon = () => {
  */
 
 const hideList = () => {
-  console.log("Muestra");
-
   list.classList.toggle("hide");
 };
 /**
