@@ -21,10 +21,10 @@ padding: 1rem;
 
   .containerImage{
 	  background-image: url(../images/logo/blanco-sin-fondo.png);
-	  width: 100%;
-    background-repeat: no-repeat;
+	  background-repeat: no-repeat;
     background-position: center;
 	border-left: 2px solid rgb(186, 149, 78);
+	height: 300px;
   }
 
   .form {
