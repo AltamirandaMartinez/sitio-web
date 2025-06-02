@@ -256,3 +256,9 @@ padding: 1rem;
 .contact__redes__icons .iconify:hover {
   transform: scale(1.2);
 }
+
+footer {
+  clear: both;
+  padding: 40px 20px 20px;
+  margin-top: 50px;
+}
