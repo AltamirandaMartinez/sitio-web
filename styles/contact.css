@@ -232,3 +232,27 @@ padding: 1rem;
 .redes__links {
   text-decoration: none;
 }
+
+.contact__redes--standalone {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+.contact__redes__icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.contact__redes__icons .iconify {
+  font-size: 30px;
+  color: #ba954e;
+  transition: transform 0.3s ease;
+}
+
+.contact__redes__icons .iconify:hover {
+  transform: scale(1.2);
+}
