@@ -39,7 +39,7 @@ padding: 1rem;
   flex-direction: column;
 }
   
-  .contact-form {
+ .contact-form {
   background-color: #182436;
   position: relative;
   padding: 2rem;
@@ -203,6 +203,7 @@ padding: 1rem;
 	  padding: 0.45rem 1.2rem;
 	}
   }
+
 .contact-form {
   background-color: #182436; /* Fondo oscuro */
   display: flex;
@@ -232,7 +233,6 @@ padding: 1rem;
 .redes__links {
   text-decoration: none;
 }
-
 .contact__redes--standalone {
   margin-top: 30px;
   padding: 20px;
@@ -256,13 +256,11 @@ padding: 1rem;
 .contact__redes__icons .iconify:hover {
   transform: scale(1.2);
 }
-
 footer {
   clear: both;
   padding: 40px 20px 20px;
   margin-top: 50px;
 }
-
 .contact__section {
   background-color: #e6eff6; /* azul claro sin imagen de fondo */
   padding: 40px 20px;
