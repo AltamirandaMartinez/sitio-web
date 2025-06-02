@@ -45,6 +45,9 @@ padding: 1rem;
 	background-color:#182436;
 	position: relative;
 	height: 300px;
+	display: flex;
+	align-items: center;
+        justify-content: center;
   }
   
   form {
@@ -54,11 +57,16 @@ padding: 1rem;
 	position: relative;
   }
   
- .contact__redes{
-    position: relative;
-    top: 19.3rem;
+ .contact__redes {
+    display: flex;
+    gap: 1rem;
  }
- 
+
+.contact__redes span {
+    color: white;
+	 font-size: 2rem;
+	 margin: 0 0.5;
+ }
   
   .contact-info {
 	padding: 2.3rem 2.2rem;
