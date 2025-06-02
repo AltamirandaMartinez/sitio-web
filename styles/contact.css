@@ -262,3 +262,39 @@ footer {
   padding: 40px 20px 20px;
   margin-top: 50px;
 }
+
+.contact__section {
+  background-color: #e6eff6; /* azul claro sin imagen de fondo */
+  padding: 40px 20px;
+  background-image: none !important; /* fuerza a que NO haya logo ni imagen */
+}
+
+.contact-form {
+  text-align: center;
+  padding: 20px;
+}
+
+.redes__bloque {
+  margin-top: 30px;
+  padding: 20px;
+  background: none;
+  box-shadow: none;
+}
+
+.redes__bloque__iconos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 15px;
+}
+
+.redes__bloque__iconos .iconify {
+  font-size: 36px;
+  color: #ba954e;
+  transition: transform 0.3s ease;
+}
+
+.redes__bloque__iconos .iconify:hover {
+  transform: scale(1.2);
+}
+
