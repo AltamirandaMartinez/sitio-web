@@ -28,25 +28,28 @@ padding: 1rem;
  }
 
   .form {
-	width: 100%;
-	max-width: 820px;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
-	z-index: 1000;
-	overflow: visible;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-  }
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
   
   .contact-form {
-	background-color:#182436;
-	position: relative;
-	height: 300px;
-	display: flex;
-	align-items: center;
-        justify-content: center;
-  }
+  background-color: #182436;
+  position: relative;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
   
   form {
 	padding: 2.3rem 2.2rem;
@@ -55,16 +58,15 @@ padding: 1rem;
 	position: relative;
   }
   
- .contact__redes {
-    display: flex;
-    gap: 1rem;
- }
+.contact__redes {
+  display: flex;
+  gap: 1.5rem;
+}
 
 .contact__redes span {
-    color: white;
-	 font-size: 2rem;
-	 margin: 0 0.5;
- }
+  color: white;
+  font-size: 2.5rem;
+}
   
   .contact-info {
 	padding: 2.3rem 2.2rem;
