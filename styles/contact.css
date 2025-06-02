@@ -203,3 +203,32 @@ padding: 1rem;
 	  padding: 0.45rem 1.2rem;
 	}
   }
+.contact-form {
+  background-color: #182436; /* Fondo oscuro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.contact__redes {
+  display: flex;
+  gap: 2rem;
+}
+
+.contact__redes span {
+  color: white;
+  font-size: 2rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact__redes span:hover {
+  transform: scale(1.2);
+  color: #ba954e;
+}
+
+.redes__links {
+  text-decoration: none;
+}
