@@ -361,3 +361,46 @@
 .carousel__dos {
   transform: translateY(4rem);
 }
+
+/* MOSTRAR TEXTO DEL CARRUSEL EN CELULARES */
+
+@media (max-width: 767px) {
+
+  #carouselHome .carousel-caption.d-md-block {
+    display: block !important;
+  }
+
+  #carouselHome .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    transform: translateY(1rem);
+  }
+
+  #carouselHome .containerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  #carouselHome .carousel-caption h5 {
+    font-size: 1.3rem;
+  }
+
+  #carouselHome .carousel-caption p {
+    font-size: 0.85rem;
+  }
+
+  #carouselHome .containerBanner {
+    width: 90%;
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  #carouselHome .btnCarousel {
+    font-size: 0.85rem;
+    padding: 0.4rem 1.5rem;
+  }
+}
