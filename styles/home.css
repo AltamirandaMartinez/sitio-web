@@ -41,8 +41,7 @@
 }
 
 .containerBanner{
-  background-color: black;
-  opacity: 60%;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 1rem;
   padding: .5rem;
 }
@@ -57,29 +56,26 @@
 }
 
 .containerDescription__p{
-  color: #6C757D;
+  color: #fff;
 }
 
 .textoBanner{
-  background-color: black;
-  opacity: 60%;
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 22px;
   width: 50%;
 }
 
+.carousel-caption h5{
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: #fff;
+  font-weight: bold;
+}
 
-  .carousel-caption h5{
-    font-size: 2rem;
-    margin-top: 0.5rem;
-    color: #495057;
-    font-weight: bold;
-   }
-
-   .contenido__p{
-    font-size: 1rem;
-    color: #6C757D;
-
-  }
+.contenido__p{
+  font-size: 1rem;
+  color: #fff;
+}
 
 
   .textoContenido h1{
