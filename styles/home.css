@@ -355,3 +355,9 @@
   }
 
 }
+
+/* BAJAR EL CONTENIDO DEL SEGUNDO CARRUSEL */
+
+.carousel__dos {
+  transform: translateY(4rem);
+}
