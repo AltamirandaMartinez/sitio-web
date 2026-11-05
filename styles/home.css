@@ -404,3 +404,69 @@
     padding: 0.4rem 1.5rem;
   }
 }
+
+/* AJUSTE DEL CARRUSEL EN CELULARES */
+
+@media (max-width: 767px) {
+
+  /* Altura del carrusel */
+  #carouselHome .carousel-inner {
+    height: 26rem;
+  }
+
+  #carouselHome .carousel-inner .carousel-item {
+    height: 26rem;
+  }
+
+  /* Imagen del carrusel */
+  #carouselHome .img-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Mostrar los textos en celular */
+  #carouselHome .carousel-caption.d-md-block {
+    display: block !important;
+  }
+
+  /* Primer y tercer carrusel */
+  #carouselHome .containerDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+
+  /* Segundo carrusel */
+  #carouselHome .contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+    transform: translateY(1rem);
+  }
+
+  /* Títulos */
+  #carouselHome .carousel-caption h5 {
+    font-size: 1.3rem;
+  }
+
+  /* Subtítulos */
+  #carouselHome .carousel-caption p {
+    font-size: 0.85rem;
+  }
+
+  /* Texto largo sobre la imagen */
+  #carouselHome .containerBanner {
+    width: 90%;
+    font-size: 0.8rem;
+    line-height: 1.3;
+  }
+
+  /* Botón */
+  #carouselHome .btnCarousel {
+    font-size: 0.85rem;
+    padding: 0.4rem 1.5rem;
+  }
+}
